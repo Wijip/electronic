@@ -25,7 +25,7 @@ public class DoesAdapter extends RecyclerView.Adapter<DoesAdapter.MyViewHolder> 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.item_does,parent,false));
+        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.item_menu,parent,false));
     }
 
     @Override
