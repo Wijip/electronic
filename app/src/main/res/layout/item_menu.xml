@@ -20,7 +20,7 @@
             android:layout_marginTop="15dp"
             android:textSize="20sp"
             android:textColor="#000c5d"
-            android:text="Buy Wishkas"
+            android:text="Smart TV"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_marginTop="6dp"
             android:textSize="16sp"
             android:textColor="#adadad"
-            android:text="Nearly market good to"
+            android:text="Good Quality"
             />
     </LinearLayout>
     <LinearLayout
@@ -45,7 +45,7 @@
             android:id="@+id/datedoes"
             android:textSize="16sp"
             android:textColor="#f63ea5"
-            android:text="Tomorrow"
+            android:text="Coming Soom"
             android:layout_marginTop="18dp"
             />
     </LinearLayout>
