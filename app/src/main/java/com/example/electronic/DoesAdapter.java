@@ -30,27 +30,9 @@ public class DoesAdapter extends RecyclerView.Adapter<DoesAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.titledoes.setText(toDo.get(position).getTitledoes());
-        holder.descdoes.setText(toDo.get(position).getDescdoes());
-        holder.datedoes.setText(toDo.get(position).getDatedoes());
 
-        final String getTitleDoes = toDo.get(position).getTitledoes();
-        final String getDescDoes = toDo.get(position).getDescdoes();
-        final String getDateDoes = toDo.get(position).getDatedoes();
-        final String getKeyDoes = toDo.get(position).getKeydoes();
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent aa = new Intent(context,EditTaskDesk.class);
-                aa.putExtra("titledoes",getTitleDoes);
-                aa.putExtra("descdoes",getDescDoes);
-                aa.putExtra("datedoes",getDateDoes);
-                aa.putExtra("keydoes",getKeyDoes);
-                context.startActivity(aa);
-            }
-        });
     }
+
 
     @Override
     public int getItemCount() {
