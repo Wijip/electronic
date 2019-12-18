@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930833910258",
+    "firebase_url": "https://electornicshop.firebaseio.com",
+    "project_id": "electornicshop",
+    "storage_bucket": "electornicshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930833910258:android:6639bdf45c151dab82036b",
+        "android_client_info": {
+          "package_name": "com.example.electronic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930833910258-kf02r8itume19o6la19i4c0pjrlsutda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.electronic",
+            "certificate_hash": "b81f129ff6feb11dc44b3faa063b9d85a93ed5f9"
+          }
+        },
+        {
+          "client_id": "930833910258-2m9dhodmctmmad2t5l88phbbva827pt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovumC4BNowPV7BC6KnJayErI99JUlXzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930833910258-2m9dhodmctmmad2t5l88phbbva827pt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
