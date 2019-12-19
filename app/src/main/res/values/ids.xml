@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="list_electronic" type="id" />
+    <item name="nama" type="id" />
+    <item name="harga" type="id" />
+    <item name="gambar" type="id" />
+    <item name="cardelectronic" type="id" />
 </resources>

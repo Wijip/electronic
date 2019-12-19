@@ -14,7 +14,7 @@ import android.text.style.TtsSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -29,7 +29,7 @@ public class GetData extends Fragment {
     private DatabaseReference mDatabase;
     // [END define_database_reference]
 
-    private FirebaseRecyclerAdapter<Makanan, MakananViewHolder> mAdapter;
+    private FirebaseRecyclerAdapter<electronic, elecViewHolder> mAdapter;
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private LinearLayoutManager linearLayoutManager;
@@ -92,8 +92,7 @@ public class GetData extends Fragment {
             }
 
             @NonNull
-            @Override
-            public GetData onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            public elecViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 LayoutInflater inflater = LayoutInflater.from(parent.getContext());
                 return new elecViewHolder(inflater.inflate(R.layout.item_menu, parent, false));
             }
