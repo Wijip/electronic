@@ -22,4 +22,11 @@ public class elecViewHolder extends RecyclerView.ViewHolder {
         card = itemView.findViewById(R.id.cardelectronic);
 
     }
+    public void bindToelectronic(electronic electronic) {
+
+        String harga = "IDR " + electronic.harga_elec;
+
+        Nama.setText(electronic.nama_elec);
+        Harga.setText(harga);
+    }
 }
