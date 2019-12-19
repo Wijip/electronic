@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.style.TtsSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,9 +67,9 @@ public class GetData extends Fragment {
 
         mAdapter = new FirebaseRecyclerAdapter<MainActivity, elecViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull MakananViewHolder makananViewHolder, int i, @NonNull final Makanan makanan) {
-                makananViewHolder.bindToMakanan(makanan);
-                Glide.with(HomeFragment.this).load(makanan.getGambar()).into(makananViewHolder.ivGambar);
+            protected void onBindViewHolder(@NonNull elecViewHolder makananViewHolder, int i, @NonNull final TtsSpan.ElectronicBuilder makanan) {
+                makananViewHolder.();
+                Glide.with(GetData.this).load(makanan.getGambar()).into(makananViewHolder.ivGambar);
 
 
                 makananViewHolder.cv.setOnClickListener(new View.OnClickListener() {
@@ -92,9 +93,9 @@ public class GetData extends Fragment {
 
             @NonNull
             @Override
-            public MakananViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            public GetData onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-                return new MakananViewHolder(inflater.inflate(R.layout.item_makanan, parent, false));
+                return new elecViewHolder(inflater.inflate(R.layout.item_menu, parent, false));
             }
         };
 
